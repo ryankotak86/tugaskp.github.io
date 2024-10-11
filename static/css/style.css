@@ -1,0 +1,285 @@
+body {
+    font-family:"Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #4CAF50; /* Warna hijau */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0px;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.login a {
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.hero {
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    height: 100vh; /* Mengisi penuh tinggi layar */
+    object-fit: cover; /* Mempertahankan aspek rasio gambar */
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header li {
+    margin-right: 20px;
+}
+
+.header button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero {
+    background-image: url('gambar.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.quote {
+    font-size: 24px;
+    text-align: center;
+}
+
+.news {
+    padding: 2em;
+    padding-bottom: 60px;
+}
+
+.news h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0b670e;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 45px;
+}
+
+.news-item {
+    background-color: #fff;
+    padding: 3px;
+    padding-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.news-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.news-title {
+    padding-left: 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    padding: 20px;
+    background-color: rgba(0, 128, 0, 0.8) ;
+    justify-items: center;
+}
+.judul{
+    text-align: center;
+}
+
+.program-card {
+    /* background-color: rgba(0, 128, 0, 0.8); Semi-transparent green */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 2px;
+    /* width: 150px; */
+    text-align: center;
+}
+
+.program-card h2 {
+    margin-top: 0;
+}
+
+.program-card .icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.program-card a {
+    color: #4CAF50; /* Green link color */
+    text-decoration: none;
+}
+
+.radio-container {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 20px;
+}
+.radio-container h2{
+    color: #0b670e;
+    padding-left: 10px;
+}
+
+.radio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+.radio-item {
+    background-color: #3CB371;
+    padding: 0px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.radio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.radio-item h3 {
+    padding-left: 15px;
+    text-align: left;
+}
+
+.radio-item p {
+    padding-left: 15px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.radio-item a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+}
+
+.logo2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo2 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 0%;
+    object-fit: cover;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.info h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact {
+    margin-bottom: 20px;
+}
+
+.contact h2 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contact a:hover {
+    color: #ffffff;
+}
+
+.fab, .fas {
+    margin-right: 10px;
+}

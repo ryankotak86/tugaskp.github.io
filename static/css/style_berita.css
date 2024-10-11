@@ -1,0 +1,305 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: #4CAF50; /* Warna hijau */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.login a {
+  border: 2px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  height: 100vh; /* Mengisi penuh tinggi layar */
+  object-fit: cover; /* Mempertahankan aspek rasio gambar */
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header li {
+  margin-right: 20px;
+}
+
+.header button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* style untuk elemen main */
+main {
+  display: flex;
+  flex: 1;
+  padding: 2rem;
+  padding-top: 2rem;
+  background-color: #f4f4f4;
+}
+/* selektor bintang memengaruhi semua elemen di halaman */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+/* style untuk elemen aside, yang menetapkan tata letak flexbox, memberikan bayangan kotak, dan mengatur margin, padding, dan warna latar belakang */
+aside {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 2rem;
+  width: 30%;
+  border-radius: 5px;
+}
+img {
+  display: block; /* Membuat gambar menjadi elemen blok */
+  max-width: 100%; /* Memastikan gambar tidak melebihi lebar parent */
+  height: auto; /* Menjaga aspek rasio gambar */
+  border-radius: 8px; /* Menambahkan sudut lengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0); /* Menambahkan bayangan halus */
+  transition: transform 0.3s ease; /* Efek transisi saat dihover */
+}
+
+/* Efek hover */
+img:hover {
+  transform: scale(1.05); /* Memperbesar gambar saat dihover */
+}
+/* style about btn aside */
+/* untuk tombol "Hire me" di elemen aside. Ini menentukan tata letak tombol, memberikan efek transisi, dan mengatur warna latar belakang dan warna teks */
+.about_btn button {
+  padding: 9px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  transform: all 0.3s ease 0s;
+  border: 1px solid #2e2e2e;
+  color: #2e2e2e;
+  transition: 0.4s;
+  background-color: #fff;
+  display: inline-block;
+}
+
+.about_btn button:hover {
+  background-color: #2e2e2e;
+  color: #fff;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+/* style about icon aside */
+/* untuk ikon media sosial di elemen aside. Ini menetapkan tata letak flexbox, memberikan efek transisi dan warna saat dihover. */
+.about-icons {
+  padding: 12px 0;
+  display: flex;
+  justify-content: start;
+  z-index: 99;
+  position: relative;
+  text-align: start;
+  margin-left: -10px;
+}
+
+.about-icons a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}
+.about-icons i {
+  font-size: 32px;
+  color: #6b7280;
+  transition: 0.1s;
+}
+
+.about-icons i:hover {
+  color: #7e8187;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+/* style untuk artikel */
+/* mengatur tata letak flexbox, memberikan padding dan bayangan kotak, dan mengatur lebar dan warna latar belakang */
+article {
+  background-color: #fff;
+  padding: 1rem;
+  flex: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 70%;
+}
+
+h1, h2, h4 {
+  margin: 2 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+p {
+  margin: 0;
+  color: rgb(135, 127, 127);
+}
+
+/* style untuk resume work experien dan education*/
+/* untuk bagian resume, termasuk pengalaman kerja dan pendidikan. Ini menetapkan tata letak flexbox, memberikan padding, dan mengatur ukuran teks dan warna. */
+.resume {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.section {
+  flex: 1;
+  padding-right: 20px;
+}
+.section-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.job-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.job-description {
+  font-size: 14px;
+  color: #888888;
+}
+.job-year {
+  font-size: 14px;
+  color: #888888;
+  margin-top: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  padding: 20px;
+  background-color: rgba(0, 128, 0, 0.8) ;
+  justify-items: center;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 19px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 0%;
+  object-fit: cover;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.info h1 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.contact {
+  margin-bottom: 20px;
+}
+
+.contact h2 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact li {
+  margin-bottom: 10px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.contact a:hover {
+  color: #ffffff;
+}
+
+.fab, .fas {
+  margin-right: 10px;
+}
